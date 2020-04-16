@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="workshop/08_Testing/Code/Bootstrap.php" colors="true" verbose="true" stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Test suite">
+            <directory>workshop/08_Testing</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">workshop\99_Miscellaneous\libs\phpunit-6.0.7.phar\php-code-coverage</directory>
+            <file>workshop/08_Testing/QueueTest.php</file>
+            <file>workshop/08_Testing/Code/Queue.php</file>
+<!--            <exclude>-->
+<!--                <directory suffix=".php">/path/to/files</directory>-->
+<!--                <file>/path/to/file</file>-->
+<!--            </exclude>-->
+        </whitelist>
+    </filter>
+</phpunit>
+ 
